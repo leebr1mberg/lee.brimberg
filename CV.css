@@ -1,0 +1,68 @@
+﻿body {
+font-family:verdana;
+background-image: URL("back.jpg");
+
+}
+
+.grid-container-header {
+  display: grid;
+  grid-template-areas:
+    'header';
+padding: 10px;
+border: 2px solid black;
+margin:20px;
+}
+
+.grid-container-Form {
+  display: grid;
+  grid-template-areas:
+    'header';
+  background-color: #d9d9d9;
+padding: 10px;
+border: 2px solid black;
+margin:20px;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-areas:
+    'menu menu main main main image';
+padding: 10px;
+border: 2px solid black;
+margin:2px;
+}
+
+.item1 {
+grid-area: header;
+border: 2px solid black;
+padding: 10px;
+margin:2px;
+font-size:25px;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+}
+
+.item2 {
+grid-area: menu;
+padding: 10px;
+margin:2px;
+font-size:20px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.item3 {
+grid-area: main;
+padding: 10px;
+margin:2px;
+font-size:15px;
+}
+
+.item4 {
+grid-area: image;
+padding: 10px;
+margin:2px;
+font-size:15px;
+}
+
