@@ -1,0 +1,86 @@
+﻿body {
+font-family:verdana;
+background-image: URL("back.jpg");
+
+}
+
+.grid-container-header {
+  display: grid;
+  grid-template-areas:
+    'header';
+padding: 10px;
+border: 2px solid black;
+margin:20px;
+}
+
+.grid-container-Form {
+  display: grid;
+  grid-template-areas:
+    'header';
+  background-color: #d9d9d9;
+padding: 10px;
+border: 2px solid black;
+margin:20px;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-areas:
+    'menu menu main main main image';
+padding: 10px;
+border: 2px solid black;
+margin:2px;
+}
+
+.item1 {
+grid-area: header;
+border: 2px solid black;
+padding: 10px;
+margin:2px;
+font-size:30px;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+color: green;
+
+}
+
+.item2 {
+grid-area: menu;
+padding: 10px;
+margin:2px;
+font-size:20px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+.item3 {
+grid-area: main;
+padding: 10px;
+margin:2px;
+font-size:15px;
+}
+
+.item4 {
+grid-area: image;
+padding: 10px;
+margin:2px;
+font-size:15px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+anima {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
